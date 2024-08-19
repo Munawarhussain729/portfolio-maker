@@ -1,0 +1,44 @@
+a {
+  color: rgb(146, 45, 129);
+}
+
+#dropdownMenu {
+  background-color: #fff5eeec;
+}
+
+.dropdown-menu > a:hover,
+.dropdown-menu > a:focus,
+.dropdown-menu > button:hover,
+.dropdown-menu > button:focus {
+  color: white;
+  background-color: #daa4aa;
+}
+
+.dropdown-menu > button:active:focus {
+  border: none;
+  outline: none;
+}
+
+.navbar {
+  z-index: 1039;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* transition: all 1s ease; */
+}
+
+.dropdown-menu {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-0.4em);
+  transition: 300ms ease all;
+}
+
+.dropdown-menu.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 300ms ease all;
+}

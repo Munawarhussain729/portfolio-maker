@@ -1,0 +1,30 @@
+.row.mainContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 5em;
+  /* transition: all 600ms ease; */
+}
+
+.title {
+  background-color: rgba(238, 144, 159, 0.904);
+  color: rgb(255, 241, 253);
+}
+
+input[type="text"]:focus {
+  border-color: rgba(238, 144, 159, 0.904);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(238, 144, 159, 0.7);
+  outline: 0 none;
+}
+
+/* #notificationContainer {
+  position: sticky;
+  top: 5em;
+} */
+
+#notificationContainer {
+  position: sticky;
+  top: 5em;
+  transition: 1s all ease;
+  height: 70vh;
+}

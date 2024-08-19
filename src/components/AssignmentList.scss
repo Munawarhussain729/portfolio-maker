@@ -1,0 +1,10 @@
+a:hover {
+  text-decoration: none;
+}
+
+.assignment-list-container:hover {
+  .assignment-list-container-title {
+    background-color: rgba(255, 182, 193, 0.12);
+    transition: all 400ms ease;
+  }
+}

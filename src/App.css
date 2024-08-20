@@ -11,10 +11,9 @@
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-.App{
+/* .App{
     padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    color: var(--black);    
+    overflow: auto; 
 }
 
 .button{
@@ -33,4 +32,4 @@
   color: var(--orange);
   border: 1px solid var(--orange);
 }
-  
+   */

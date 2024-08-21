@@ -34,3 +34,16 @@ textarea{
     left: 8rem;
 
 }
+@media screen and (max-width: 480px){
+    .user{
+        flex-direction: column;
+    }
+    .Contact-form{
+        flex-direction: column;
+        padding: 0rem;
+    }
+    .c-right{
+        transform: scale(0.7);
+        
+    }
+}

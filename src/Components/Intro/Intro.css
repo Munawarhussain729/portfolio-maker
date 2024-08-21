@@ -1,6 +1,6 @@
 .intro{
     display: flex;
-    height: 77vh;
+    height: 57vh;
     margin-top: 6rem;
 }
 .i-left{
@@ -36,8 +36,7 @@
 }
 .i-icon{
     display: flex;
-    margin-top: 3rem;
-    gap: 0rem;
+    margin-top: 1rem;
 }
 .i-icon>*{
     transform: scale(0.5);

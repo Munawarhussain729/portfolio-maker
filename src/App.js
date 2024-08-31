@@ -29,6 +29,9 @@ function App() {
 
 
       <Navbar/>
+
+
+      
       <Intro/>
       <Services/>
       {/* <Experience/>

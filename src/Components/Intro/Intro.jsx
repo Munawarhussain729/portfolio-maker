@@ -17,16 +17,16 @@ const Intro = () => {
   const transition = { duration: 2, type: 'spring' };
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center h-[57vh] mt-20md:mt-36 mx-4 md:mx-8 lg:mx-16">
+    <div className="flex flex-col md:flex-row justify-between items-center h-auto mt-25 md:my-36 mx-4 md:mx-8 lg:mx-16">
       <Grid container columnSpacing={3} rowSpacing={10}>
         <Grid item xs={12} md={6}>
           <div className="flex-1 flex flex-col gap-8">
-            <div className="flex flex-col">
+            <div className="flex flex-col min-w-[300px]">
               <span className="text-black font-bold text-3xl">Hy, I Am</span>
               <span className="text-orange-500 font-bold text-3xl">Andrew Thomas</span>
               <span className="text-gray-600 text-sm mt-2">Frontend Developer with high level of experience in web designing and development, producing quality work.</span>
             </div>
-            <button className="bg-orange-500 text-white py-2 px-6 rounded-md w-24">Hire Me</button>
+            <button className="bg-orange-500 text-white py-2 px-6 rounded-md w-28 ">Hire Me</button>
             <div className="flex mt-4">
               <img src={Github} alt="GitHub" className="w-8 h-8 mx-2 cursor-pointer transform hover:scale-110 transition duration-300" />
               <img src={Linkedin} alt="LinkedIn" className="w-8 h-8 mx-2 cursor-pointer transform hover:scale-110 transition duration-300" />
@@ -36,9 +36,9 @@ const Intro = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <div className="flex-1 flex justify-center relative">
-            <img src={Vector1} alt="Vector 1" className="absolute scale-75 -left-20 -top-10 md:scale-90 lg:scale-100" />
-            <img src={Vector2} alt="Vector 2" className="absolute scale-75 -top-10 md:scale-90 lg:scale-100" />
-            <img src={Boy} alt="Boy" className="relative z-10 scale-125 md:scale-150" />
+            <img src={Vector1} alt="Vector 1" className="absolute scale-75 -left-20 -top-10 md:scale-40 lg:scale-80 xl:scale-100" />
+            <img src={Vector2} alt="Vector 2" className="absolute scale-75 -top-10 md:scale-40 lg:scale-80 xl:scale-100" />
+            <img src={Boy} alt="Boy" className="relative z-10 scale-100 md:scale-110 lg:scale-140 xl:scale-160" />
             <motion.img
               initial={{ left: "-36%" }}
               whileInView={{ left: "-24%" }}
@@ -65,8 +65,6 @@ const Intro = () => {
           </div>
         </Grid>
       </Grid>
-
-
     </div >
   );
 }

@@ -41,14 +41,14 @@ const Intro = () => {
             <img src={Boy} alt="Boy" className="relative z-10 scale-100 md:scale-110 lg:scale-140 xl:scale-160" />
             <motion.img
               initial={{ left: "-36%" }}
-              whileInView={{ left: "-24%" }}
+              whileInView={{ left: "-28%" }}
               transition={transition}
               src={GlassesImoji} alt="Glasses Emoji"
               className="absolute -top-16 -left-24 scale-50 md:scale-75 lg:scale-100"
             />
             <motion.div
-              initial={{ top: "-4%", left: "74%" }}
-              whileInView={{ left: "68%" }}
+              initial={{ top: "-20%", left: "74%" }}
+              whileInView={{ left: "50%" }}
               transition={transition}
               className="absolute md:left-[60%] lg:left-[68%] -top-16 md:top-4 z-20 w-[250px]">
               <FloatingDiv image={crown} txt1='Web ' txt2='Developer' />
@@ -61,7 +61,7 @@ const Intro = () => {
               <FloatingDiv image={thumbup} txt1='Best Design' txt2='Award' />
             </motion.div>
             <div className='absolute w-[22rem] h-[14rem] bg-purple-200 rounded-full blur-3xl -top-16 left-[56%]'></div>
-            <div className='absolute w-[22rem] h-[14rem] bg-blue-200 rounded-full blur-3xl top-72 -left-36'></div>
+            <div classNam e='absolute w-[22rem] h-[14rem] bg-blue-200 rounded-full blur-3xl top-72 -left-36'></div>
           </div>
         </Grid>
       </Grid>

@@ -3,8 +3,9 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
-    <div className='container'> 
-    <nav className='navbar navbar-light bg-light navbar-expand-sm fixed-top'>
+    <div className=''> 
+    <div className="container">
+    <nav className='navbar navbar-light bg-light navbar-expand-md fixed-top'>
     <a
     href='#'
     className='navbar-brand mb-0 h1'>
@@ -13,9 +14,22 @@ const Navbar = () => {
      src="../../Logo/PM.png" alt="" 
         width="30" height="30"/>
         Navbar
-    </a>               
+    </a>  
+                 {/*toggle button */}
+    <button
+    type='button'
+    data-bs-toggle='collapse'
+    data-bs-target='#navbarNav'
+    className='navbar-toggler'
+    aria-controls='navbarNav'
+    aria-expanded='false'
+    aria-label='Toggle Navigation'>
+        <span className='navbar-toggler-icon'></span>
+    </button>
+
     <div className="collapse navbar-collapse">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav"
+        id='navbarNav'>
             <li className="navbar-itme active">
                 <a href="#" className='nav-link active'>
                 Welcome
@@ -38,7 +52,7 @@ const Navbar = () => {
             </li>   
         </ul>
     </div>
-    </nav>
+    </nav></div>
     </div>
   )
 }

@@ -4,55 +4,26 @@ import { Link } from 'react-scroll';
 const Navbar = () => {
   return (
     <div className=''> 
-    <div className="container">
-    <nav className='navbar navbar-light bg-light navbar-expand-md fixed-top'>
-    <a
-    href='#'
-    className='navbar-brand mb-0 h1'>
-        <img
-        className='d-inline-block align-top'
-     src="../../Logo/PM.png" alt="" 
-        width="30" height="30"/>
-        Navbar
-    </a>  
-                 {/*toggle button */}
-    <button
-    type='button'
-    data-bs-toggle='collapse'
-    data-bs-target='#navbarNav'
-    className='navbar-toggler'
-    aria-controls='navbarNav'
-    aria-expanded='false'
-    aria-label='Toggle Navigation'>
-        <span className='navbar-toggler-icon'></span>
+    <div className="container bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div className="collapse navbar-collapse">
-        <ul className="navbar-nav"
-        id='navbarNav'>
-            <li className="navbar-itme active">
-                <a href="#" className='nav-link active'>
-                Welcome
-                </a>
-            </li>
-            <li className="navbar-itme active">
-                <a href="#" className='nav-link'>
-                Showcase
-                </a>
-            </li>
-            <li className="navbar-itme active">
-                <a href="#" className='nav-link'>
-                How it works?
-                </a>
-            </li>
-            <li className="navbar-itme active">
-                <a href="#" className='nav-link'>
-                Pricing
-                </a>
-            </li>   
-        </ul>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-5">
+        <a class="nav-link active" aria-current="page" href="#">Welcome</a>
+        <a class="nav-link" href="#">Showcase</a>
+        <a class="nav-link" href="#">How it Works?</a>
+        <a class="nav-link" href="#">Pricing</a>
     </div>
-    </nav></div>
+    </div>
+  </div>
+  <a href="#" class="btn  btn-secondary rounded-pill btn-sm disabled ps-3 pe-3" tabindex="-1" role="button"aria-disabled="true">login</a>
+
+</nav>
+   </div>
     </div>
   )
 }

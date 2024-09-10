@@ -4,7 +4,7 @@ import "./Card.css";
 
 const Card = ({emoji, heading, detail}) => {
   return (
-    <div className='card'>
+    <div className='card z-10'>
         <img src={emoji} alt="" />
         <span>{heading}</span>
         <span>{detail}</span>

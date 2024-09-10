@@ -31,12 +31,12 @@ function App() {
       <Navbar/>
       <Intro/>
       <Services/>
-      {/* <Experience/>
+       <Experience/>
       <Works/>
       <Portfolio/>
       <Testimonials/>
       <Contact/>
-      <Footer/> */}
+      <Footer/> 
      </div>
   );
 }

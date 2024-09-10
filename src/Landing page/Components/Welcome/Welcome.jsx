@@ -19,8 +19,8 @@ const Welcome = () => {
                 portfolio that showcase your creativity  and hard work
                 with elegance </p>
               <div className='flex'>
-                <Button type='get_started' text={"Getting Started"} icon={<FaLongArrowAltRight className='ml-3' />} />
-                <Button type='transparent' text={"Explore Our Templates"} />
+                <Button className={'m-1'} type='get_started' text={"Get Started"} icon={<FaLongArrowAltRight className='ml-5' />} />
+                <Button className={'m-1'} type='transparent' text={"Explore Templates"} />
               </div>
             </div>
 

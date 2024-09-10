@@ -11,7 +11,7 @@ const Experience = () => {
   const darkMode = theme.state.darkMode; 
 
   return (
-    <div className='experience' id='Experience'> 
+    <div className='experience mt-[400px]' id='Experience'> 
         <div className='achievement'>
             <div className='circle' style={{color:darkMode? 'black':''}}>8+ </div>
             <span>Years</span>

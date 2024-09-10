@@ -1,44 +1,31 @@
-import React, { useContext } from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import "./App.css";
-import Intro from "./Components/Intro/Intro";
-import Services from "./Components/Services/Services";
-import Experience from "./Components/Experience/Experience";
-import Works from "./Components/Works/Works";
-import Portfolio from "./Components/Portfolio/Portfolio";
-import Testimonials from "./Components/Testimonials/Testimonials";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
-import { themeContext } from "./context";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import 'bootstrap/dist/css/bootstrap-reboot.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Navbar from './Landing page/Components/Navbar/Navbar';
+import Welcome from './Landing page/Components/Welcome/Welcome';
+import Showcase from './Landing page/Components/Showcase/Showcase';
+import HowItWorks from './Landing page/Components/How it Works/HowWorks';
+import Pricing from './Landing page/Components/Pricing/Pricing';
 
-
-
-
-
-function App() {
-  
-  const theme = useContext (themeContext);
-  const darkMode = theme.state.darkMode; 
-
+const App = () => {
   return (
-    <div className="App"
-    style={{
-      background:darkMode? 'black':'',
-      color: darkMode? 'white':'',
-    }}>
-
-
+    <div>
+      <BrowserRouter>  {/* Wrap the entire app in BrowserRouter */}
       <Navbar/>
-      <Intro/>
-      <Services/>
-       <Experience/>
-      <Works/>
-      <Portfolio/>
-      <Testimonials/>
-      <Contact/>
-      <Footer/> 
+      <Routes>
+        <Route path="/" element={<Welcome />} /> {/* Default Route */}
+        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/showcase" element={<Showcase />} />
+        <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="/pricing" element={<Pricing />} />
+      </Routes>
+     </BrowserRouter>,
+      
      </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -13,9 +13,9 @@ const Welcome = () => {
         <Grid container columnSpacing={5} rowSpacing={5} className='p-5'>
           <Grid item xs={12} md={6} className='flex items-center'>
             <div >
-              <h1 className='font-semibold '>Unleash your potential with a
+              <h1 className='font-semibold text-lg'>Unleash your potential with a
                 custom Portfolio</h1>
-              <p>Transform your ideas and projects into  a stunning
+              <p className='my-3'>Transform your ideas and projects into  a stunning
                 portfolio that showcase your creativity  and hard work
                 with elegance </p>
               <div className='flex'>

@@ -13,21 +13,15 @@ const Navbar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav ms-5">
-        {/* <a className="nav-link active" aria-current="page" href="/src/Landing page/Components/Welcome/Welcome.jsx">Welcome</a>
-        <a className="nav-link" href="/Showcase">Showcase</a>
-        <a className="nav-link" href="/src/Landing page/Components/How it Works/HowWorks.jsx">How it Works?</a>
-        <a className="nav-link" href="/src/Landing page/Components/Pricing/Pricing.jsx">Pricing</a> */}
-
-<Link className="nav-link active" aria-current="page" to="/welcome">Welcome</Link>
+    <Link className="nav-link active" aria-current="page" to="/welcome">Welcome</Link>
               <Link className="nav-link" to="/showcase">Showcase</Link>
               <Link className="nav-link" to="/how-it-works">How it Works?</Link>
               <Link className="nav-link" to="/pricing">Pricing</Link>
+              <a href="#" className="btn  btn-secondary rounded-pill btn-sm ps-3 pe-3 pt-2 " tabIndex="-1" role="button" aria-disabled="true">login</a>
     </div>
     </div>
   </div>
-  <a href="#" className="btn  btn-secondary rounded-pill btn-sm disabled ps-3 pe-3" tabIndex="-1" role="button" aria-disabled="true">login</a>
-
-</nav>
+  </nav>
    </div>
     </div>
   )

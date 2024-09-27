@@ -2,6 +2,7 @@ import React from 'react';
 import image1 from '../../images/landing-page-1.png';
 import image2 from '../../images/landing-page-2.png';
 import image3 from '../../images/landing-page-3.png';
+import AboutMe from '../About/AboutUs';
 
 const Welcome = () => {
   return (
@@ -39,21 +40,9 @@ const Welcome = () => {
               className="rounded-lg w-full max-h-[400px]"
             />
           </div>
-          {/* <img
-              src={image2}
-              alt="Portfolio Example 2"
-              className="rounded-lg border-2 border-gray-300 shadow-md w-[250px] h-[170px] relative z-10"
-              style={{ top: '300px', left: '55%' }}
-            />
-            <img
-              src={image3}
-              alt="Portfolio Example 3"
-              className="rounded-lg border-2 border-gray-300 shadow-md w-[250px] h-[350px] relative z-30"
-              style={{ top: '120px', left: '77%' }}
-            /> */}
-          {/* </div> */}
+        
         </div>
-      </div>
+      </div><AboutMe/>
     </div>
   );
 };

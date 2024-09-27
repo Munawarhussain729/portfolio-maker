@@ -2,6 +2,7 @@ import React from 'react';
 import image1 from '../../images/landing-page-1.png';
 import image2 from '../../images/landing-page-2.png';
 import image3 from '../../images/landing-page-3.png';
+import AboutMe from '../About/AboutUs';
 
 const Welcome = () => {
   return (
@@ -53,7 +54,7 @@ const Welcome = () => {
             /> */}
           {/* </div> */}
         </div>
-      </div>
+      </div><AboutMe/>
     </div>
   );
 };

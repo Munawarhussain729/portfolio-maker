@@ -1,9 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import "bootstrap/dist/css/bootstrap.min.css";
-import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import 'bootstrap/dist/css/bootstrap-reboot.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Navbar from './Landing page/Components/Navbar/Navbar';
 import Welcome from './Landing page/Components/Welcome/Welcome';
 import Showcase from './Landing page/Components/Showcase/Showcase';

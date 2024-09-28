@@ -1,5 +1,5 @@
 import React from 'react';
-import TeamWork from "./../../../assets/team_work.jpg"
+import TeamWork from "./../../assets/team_work.jpg"
 const AboutMe = () => {
     return (
         <section className="bg-white py-16 px-6 md:px-20">

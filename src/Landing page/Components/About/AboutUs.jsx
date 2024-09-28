@@ -1,35 +1,35 @@
 import React from 'react';
-
+import TeamWork from "./../../../assets/team_work.jpg"
 const AboutMe = () => {
     return (
         <section className="bg-white py-16 px-6 md:px-20">
             <div className="max-w-screen-lg mx-auto">
-                {/* Section Title */}
                 <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
-                    About Me
+                    About Us
                 </h2>
                 <div className="flex flex-col md:flex-row items-center">
                     {/* Image Section */}
                     <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-10">
                         <img
-                            src="https://via.placeholder.com/400"
+                            src={TeamWork}
                             alt="About Me"
-                            className="rounded-lg shadow-lg object-cover h-[350px] w-full"
+                            className="rounded-lg shadow-lg object-cover h-[550px] w-full"
                         />
                     </div>
                     {/* Text Content */}
                     <div className="w-full md:w-1/2 text-center md:text-left">
                         <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                            Hello! I'm a passionate developer dedicated to building responsive
-                            and dynamic web experiences. With a keen eye for design and a
-                            strong foundation in development, I aim to create projects that
-                            not only look great but also function smoothly.
+                            At <span className='font-semibold text-black'>Portfolio Maker</span>, we believe that showcasing your skills and
+                            achievements through a beautifully crafted portfolio can make all
+                            the difference in today’s competitive world. Whether you're a designer,
+                            developer, writer, or entrepreneur, a well-organized and visually
+                            appealing portfolio is essential to stand out.
                         </p>
                         <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                            My journey in web development started with a deep curiosity about
-                            how websites work. Today, I work with modern tools and technologies
-                            to bring ideas to life and help businesses and individuals present
-                            their work in the best light possible.
+                            Our platform provides an effortless way to create stunning, professional
+                            portfolios tailored to your personal or professional needs. With a variety
+                            of customizable templates and a user-friendly interface, we make it easy
+                            for you to present your work in the best light possible.
                         </p>
                         <p className="text-lg text-gray-600 leading-relaxed">
                             Let's collaborate and build something amazing together!

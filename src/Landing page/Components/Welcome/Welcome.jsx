@@ -40,9 +40,9 @@ const Welcome = () => {
               className="rounded-lg w-full max-h-[400px]"
             />
           </div>
-        
+
         </div>
-      </div><AboutMe/>
+      </div>
     </div>
   );
 };

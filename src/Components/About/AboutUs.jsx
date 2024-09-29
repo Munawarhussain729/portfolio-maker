@@ -1,14 +1,10 @@
 import React from 'react';
 import TeamWork from "./../../assets/team_work.jpg"
+import SectionWrapper from '../elements/SectionWrapper';
 const AboutMe = () => {
     return (
-        <section id='about' className="bg-white py-16 px-6 md:px-20">
-            <div className="max-w-screen-lg mx-auto">
-                <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
-                    About Us
-                </h2>
-                <div className="flex flex-col md:flex-row items-center">
-                    {/* Image Section */}
+        <SectionWrapper id={'about'} title={'About'} className='bg-gray-100'>
+            <div className="flex flex-col md:flex-row items-center">
                     <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-10">
                         <img
                             src={TeamWork}
@@ -16,7 +12,6 @@ const AboutMe = () => {
                             className="rounded-lg shadow-lg object-cover h-[550px] w-full"
                         />
                     </div>
-                    {/* Text Content */}
                     <div className="w-full md:w-1/2 text-center md:text-left">
                         <p className="text-lg text-gray-600 leading-relaxed mb-6">
                             At <span className='font-semibold text-black'>Portfolio Maker</span>, we believe that showcasing your skills and
@@ -45,8 +40,7 @@ const AboutMe = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+        </SectionWrapper>
     );
 };
 

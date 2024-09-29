@@ -59,20 +59,20 @@ const Navbar = () => {
               </ScrollIntoView>
             </li>
             <li>
-              <ScrollIntoView selector="#about" className='cursor-pointer'>
-                <p
-                  className="block py-2 px-3 text-gray-900 cursor-pointer rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >
-                  About
-                </p>
-              </ScrollIntoView>
-            </li>
-            <li>
               <ScrollIntoView selector="#templates" className='cursor-pointer'>
                 <p
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >
                   Templates
+                </p>
+              </ScrollIntoView>
+            </li>
+            <li>
+              <ScrollIntoView selector="#about" className='cursor-pointer'>
+                <p
+                  className="block py-2 px-3 text-gray-900 cursor-pointer rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >
+                  About
                 </p>
               </ScrollIntoView>
             </li>

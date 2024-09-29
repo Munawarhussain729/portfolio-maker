@@ -6,7 +6,7 @@ import AboutMe from '../About/AboutUs';
 
 const Welcome = () => {
   return (
-    <div className="bg-gray-100 py-20 px-10">
+    <div id='welcome' className="bg-gray-100 py-20 px-10">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 gap-x-3 md:grid-cols-2   items-center justify-between">
         <div className="w-full ">
           <h2 className="text-3xl font-bold mb-6">Unleash your potential with a custom Portfolio</h2>

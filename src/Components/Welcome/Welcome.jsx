@@ -2,7 +2,8 @@ import React from 'react';
 import image1 from '../../images/landing-page-1.png';
 import image2 from '../../images/landing-page-2.png';
 import image3 from '../../images/landing-page-3.png';
-import AboutMe from '../About/AboutUs';
+import ScrollIntoView from 'react-scroll-into-view'
+import Button from '../elements/Button';
 
 const Welcome = () => {
   return (
@@ -15,8 +16,18 @@ const Welcome = () => {
             and hard work with elegance.
           </p>
           <div className="flex items-center space-x-4">
-            <button className="bg-black text-white py-2 px-6 rounded-full">Get Started</button>
-            <a href="#" className="border border-gray-400 py-2 px-6 rounded-full text-gray-600">Explore Our Templates</a>
+          <ScrollIntoView selector="#templates" className='cursor-pointer'>
+            <Button
+              text='Get Started'
+              variant='fill'
+            />
+          </ScrollIntoView>
+          <ScrollIntoView selector="#templates" className='cursor-pointer'>
+            <Button
+              text='Explore Our Templates'
+              variant='default'
+            />
+          </ScrollIntoView>
           </div>
         </div>
 

@@ -56,26 +56,24 @@ const defaultOptions = {
 
 function Templates() {
     return (
-        <section id='templates' className='px-1 bg-white md:px-20 py-16'>
+        <section id='templates' className='px-1 bg-white md:px-10 py-16'>
             <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
                 Templates
             </h2>
-            <div className='px-2'>
-                <div className='  grid grid-cols-4 gap-x-5 justify-center'>
-                    {
-                        templateData.map((item) => {
-                            return (
-                                <div className=' w-[400px] h-[500px] cursor-pointer'>
-                                    <Tilt options={defaultOptions} style={{ height: '100%', width: '100%' }}>
-                                        <div className='shadow-md'>
-                                            <img src={`/portfolios/${item.image}`} alt={item.title} className='rounded-md' />
-                                        </div>
-                                    </Tilt>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
+            <div className=' w-full flex justify-center flex-wrap'>
+                {
+                    templateData.map((item) => {
+                        return (
+                            <div className='m-2 md:m-3 w-[300px] h-[400px] lg:w-[400px] lg:h-[500px] cursor-pointer'>
+                                <Tilt options={defaultOptions} style={{ height: '100%', width: '100%' }}>
+                                    <div className='shadow-md'>
+                                        <img src={`/portfolios/${item.image}`} alt={item.title} className='rounded-md' />
+                                    </div>
+                                </Tilt>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </section>
     )

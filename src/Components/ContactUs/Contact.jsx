@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionWrapper from '../elements/SectionWrapper'
-import Button from '../elements/Button'
+import SectionWrapper from '../../elements/SectionWrapper'
+import Button from '../../elements/Button'
 
 function Contact() {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import TeamWork from "./../../assets/team_work.jpg"
-import SectionWrapper from '../elements/SectionWrapper';
-import Button from '../elements/Button';
+import SectionWrapper from '../../elements/SectionWrapper';
+import Button from '../../elements/Button';
 import ScrollIntoView from 'react-scroll-into-view'
 
 const AboutMe = () => {

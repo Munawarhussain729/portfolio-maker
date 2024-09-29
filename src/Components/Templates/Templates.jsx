@@ -1,6 +1,6 @@
-import React from 'react'
-import SectionWrapper from '../elements/SectionWrapper'
+import React, { useState } from 'react'
 import { Tilt } from 'react-tilt'
+import CustomModal from '../../elements/CustomModel'
 
 const templateData = [
     {
@@ -55,8 +55,18 @@ const defaultOptions = {
 
 
 function Templates() {
+    const [open, setOpen] = useState(false)
+
     return (
         <section id='templates' className='px-1 bg-white md:px-10 py-16'>
+            <CustomModal
+                open={open}
+                setOpen={setOpen}
+            >
+                <div>
+                    <h1>Hey there</h1>
+                </div>
+            </CustomModal>
             <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
                 Templates
             </h2>
@@ -64,7 +74,12 @@ function Templates() {
                 {
                     templateData.map((item) => {
                         return (
-                            <div className='m-2 md:m-3 w-[300px] h-[400px] lg:w-[400px] lg:h-[500px] cursor-pointer'>
+                            <div
+                                onClick={() => {
+                                    setOpen(true)
+                                }}
+                                className='m-2 md:m-3 w-[300px] h-[400px] lg:w-[400px] lg:h-[500px] cursor-pointer'
+                            >
                                 <Tilt options={defaultOptions} style={{ height: '100%', width: '100%' }}>
                                     <div className='shadow-md'>
                                         <img src={`/portfolios/${item.image}`} alt={item.title} className='rounded-md' />

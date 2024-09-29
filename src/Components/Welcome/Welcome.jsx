@@ -3,7 +3,7 @@ import image1 from '../../images/landing-page-1.png';
 import image2 from '../../images/landing-page-2.png';
 import image3 from '../../images/landing-page-3.png';
 import ScrollIntoView from 'react-scroll-into-view'
-import Button from '../elements/Button';
+import Button from '../../elements/Button';
 
 const Welcome = () => {
   return (

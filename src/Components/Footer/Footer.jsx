@@ -42,9 +42,6 @@ function Footer() {
                             <Icon icon={'mdi:email'} width={25} className='text-gray-500 group-hover:text-red-500' />
                             <p className='ml-1 mt-0 pt-0 text-gray-500 group-hover:text-black'>munawarhussa.7@gmail.com</p>
                         </a>
-
-
-                        {/* <p className='flex items-center'><span><Icon icon={'mage:email'} /> </span>: munawarhussa.7@gmail.com</p> */}
                     </div>
                     <div>
                         <div className="group my-3">

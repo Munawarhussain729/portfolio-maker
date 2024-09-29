@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Tilt } from 'react-tilt'
-import CustomModal from '../../elements/CustomModel'
 
 const templateData = [
     {

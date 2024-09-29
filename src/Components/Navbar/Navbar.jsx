@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import ScrollIntoView from 'react-scroll-into-view'
 import Button from '../../elements/Button';
+import CustomModal from '../../elements/CustomModel';
+import VerticalLinearStepper from '../../elements/Stepper';
+import PersonalInfoSection from '../../elements/Accordion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [modelOpen, setModelOpen] = useState(false)
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);
@@ -14,6 +18,14 @@ const Navbar = () => {
   }
   return (
     <nav className="bg-white sticky border-gray-200 top-0 z-50 shadow-sm">
+      <CustomModal
+        open={modelOpen}
+        setOpen={setModelOpen}
+      >
+        <div className='w-[70vh] md:w-[100vh] outline-none'>
+          <PersonalInfoSection />
+        </div>
+      </CustomModal>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3">
           <span className="self-center text-2xl font-semibold whitespace-nowrap">
@@ -97,7 +109,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Button text={'Try Your Info'} variant='fill' />
+        <Button onClick={() => { setModelOpen(true) }} text={'Try Your Info'} variant='fill' />
       </div>
     </nav>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import TeamWork from "./../../assets/team_work.jpg"
 const AboutMe = () => {
     return (
-        <section className="bg-white py-16 px-6 md:px-20">
+        <section id='about' className="bg-white py-16 px-6 md:px-20">
             <div className="max-w-screen-lg mx-auto">
                 <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
                     About Us

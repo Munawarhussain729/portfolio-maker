@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
+import ScrollIntoView from 'react-scroll-into-view'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+      setIsOpen(false)
+    }
+  }
   return (
     <nav className="bg-white border-gray-200 relative">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3">
-
           <span className="self-center text-2xl font-semibold whitespace-nowrap">
             Portfolio Maker
           </span>
@@ -42,45 +49,50 @@ const Navbar = () => {
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:border-0 md:bg-white">
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                aria-current="page"
-              >
-                Home
-              </a>
+              <ScrollIntoView selector="#welcome" className='cursor-pointer'>
+                <p
+                  className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                  aria-current="page"
+                >
+                  Home
+                </p>
+              </ScrollIntoView>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
-                About
-              </a>
+              <ScrollIntoView selector="#about" className='cursor-pointer'>
+                <p
+                  className="block py-2 px-3 text-gray-900 cursor-pointer rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >
+                  About
+                </p>
+              </ScrollIntoView>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
-                Services
-              </a>
+              <ScrollIntoView selector="#templates" className='cursor-pointer'>
+                <p
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >
+                  Templates
+                </p>
+              </ScrollIntoView>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
-                Pricing
-              </a>
+              <ScrollIntoView selector="#pricing" className='cursor-pointer'>
+                <p
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >
+                  Pricing
+                </p>
+              </ScrollIntoView>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
-                Contact
-              </a>
+              <ScrollIntoView selector="#contact" className='cursor-pointer'>
+                <p
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >
+                  Contact
+                </p>
+              </ScrollIntoView>
             </li>
           </ul>
         </div>

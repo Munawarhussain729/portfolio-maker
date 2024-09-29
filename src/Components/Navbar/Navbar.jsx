@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ScrollIntoView from 'react-scroll-into-view'
+import Button from '../../elements/Button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,6 +97,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <Button text={'Try Your Info'} variant='fill' />
       </div>
     </nav>
   );

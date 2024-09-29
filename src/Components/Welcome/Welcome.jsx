@@ -15,23 +15,25 @@ const Welcome = () => {
             Transform your ideas and projects into a stunning portfolio that showcases your creativity
             and hard work with elegance.
           </p>
-          <div className="flex items-center space-x-4">
-          <ScrollIntoView selector="#templates" className='cursor-pointer'>
+          <div className="flex w-full flex-col justify-center md:flex-row items-center md:space-x-4">
+          <ScrollIntoView selector="#templates" className='cursor-pointer w-full md:w-auto'>
             <Button
               text='Get Started'
               variant='fill'
+              className='w-full my-1'
             />
           </ScrollIntoView>
-          <ScrollIntoView selector="#templates" className='cursor-pointer'>
+          <ScrollIntoView selector="#templates" className='cursor-pointer w-full md:w-auto'>
             <Button
-              text='Explore Our Templates'
+              text='Explore Templates'
               variant='default'
+              className='w-full my-1'
             />
           </ScrollIntoView>
           </div>
         </div>
 
-        <div className="w-full h-[400px] grid grid-cols-2  gap-x-2 ">
+        <div className="w-full h-full mt-5 md:h-[400px] md:mt-0 grid grid-cols-1 md:grid-cols-2  gap-x-2 gap-y-2 md:gap-y-0 ">
           <div>
             <img
               src={image1}

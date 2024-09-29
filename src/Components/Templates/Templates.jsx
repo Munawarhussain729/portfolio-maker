@@ -59,14 +59,6 @@ function Templates() {
 
     return (
         <section id='templates' className='px-1 bg-white md:px-10 py-16'>
-            <CustomModal
-                open={open}
-                setOpen={setOpen}
-            >
-                <div>
-                    <h1>Hey there</h1>
-                </div>
-            </CustomModal>
             <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
                 Templates
             </h2>

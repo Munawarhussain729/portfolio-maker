@@ -13,7 +13,7 @@ const App = () => {
       <BrowserRouter>  {/* Wrap the entire app in BrowserRouter */}
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Default Route */}
+          <Route path="/" element={<Home />} /> 
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/showcase" element={<Showcase />} />
           <Route path="/how-it-works" element={<HowItWorks />} />

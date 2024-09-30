@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import ScrollIntoView from 'react-scroll-into-view'
 import Button from '../../elements/Button';
 import CustomModal from '../../elements/CustomModel';
-import VerticalLinearStepper from '../../elements/Stepper';
-import PersonalInfoSection from '../../elements/Accordion';
+import PersonalInfoSection from '../../elements/PersonalInfo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -3,11 +3,13 @@ import ScrollIntoView from 'react-scroll-into-view'
 import Button from '../../elements/Button';
 import CustomModal from '../../elements/CustomModel';
 import PersonalInfoSection from '../../elements/PersonalInfo';
+import EducationSection from '../../elements/Education';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [modelOpen, setModelOpen] = useState(false)
   const [personalInfo, setPersnalInfo] = useState({})
+  const [educations, setEducations] = useState([])
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);
@@ -28,7 +30,10 @@ const Navbar = () => {
           <PersonalInfoSection
             personalInfo={personalInfo}
             setPersonalInfo={setPersnalInfo}
-
+          />
+          <EducationSection
+            educations={educations}
+            setEducations={setEducations}
           />
         </div>
       </CustomModal>

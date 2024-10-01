@@ -24,9 +24,19 @@ const Navbar = () => {
     <nav className="bg-white sticky border-gray-200 top-0 z-50 shadow-sm">
       <CustomModal
         open={modelOpen}
+        title={"Pro User functionality"}
         setOpen={setModelOpen}
       >
-        <div className='w-[70vh] md:w-[100vh] outline-none'>
+        <div className='px-2'>
+          <div className='min-h-[100px] flex items-center'>
+            <p>For Pro users only</p>
+          </div>
+          <div className='flex w-full pb-2 gap-x-3 items-center justify-between'>
+            <Button variant='fill' text={'Switch To Pro'} />
+            <Button text={'On Close'} />
+          </div>
+        </div>
+        {/* <div className='w-[70vh] md:w-[100vh] outline-none'>
           <PersonalInfoSection
             personalInfo={personalInfo}
             setPersonalInfo={setPersnalInfo}
@@ -35,7 +45,7 @@ const Navbar = () => {
             educations={educations}
             setEducations={setEducations}
           />
-        </div>
+        </div> */}
       </CustomModal>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3">

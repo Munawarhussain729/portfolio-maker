@@ -7,6 +7,7 @@ import PersonalInfoSection from '../../elements/PersonalInfo';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [modelOpen, setModelOpen] = useState(false)
+  const [personalInfo, setPersnalInfo] = useState({})
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);
@@ -15,6 +16,8 @@ const Navbar = () => {
       setIsOpen(false)
     }
   }
+
+  console.log("Personal information ", personalInfo)
   return (
     <nav className="bg-white sticky border-gray-200 top-0 z-50 shadow-sm">
       <CustomModal
@@ -22,13 +25,17 @@ const Navbar = () => {
         setOpen={setModelOpen}
       >
         <div className='w-[70vh] md:w-[100vh] outline-none'>
-          <PersonalInfoSection />
+          <PersonalInfoSection
+            personalInfo={personalInfo}
+            setPersonalInfo={setPersnalInfo}
+
+          />
         </div>
       </CustomModal>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a className="flex items-center space-x-3">
           <span className="self-center text-2xl font-semibold whitespace-nowrap">
-            Portfolio Maker
+            SpotFolio
           </span>
         </a>
         <button

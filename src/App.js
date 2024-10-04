@@ -28,7 +28,7 @@ const App = () => {
         </Routes>
       </BrowserRouter> */}
       <div className='text-black bg-gray-300 text-center py-1'>
-        Copyrights@all rights reserved
+        Copyrights@ 2024 SpotFolio. All rights reserved
       </div>
     </div>
   )

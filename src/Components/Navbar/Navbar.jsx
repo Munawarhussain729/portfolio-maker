@@ -119,7 +119,7 @@ const Navbar = () => {
                 </p>
               </ScrollIntoView>
             </li> */}
-            <li>
+            {/* <li>
               <ScrollIntoView selector="#contact" className='cursor-pointer'>
                 <p
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
@@ -127,10 +127,12 @@ const Navbar = () => {
                   Contact
                 </p>
               </ScrollIntoView>
-            </li>
+            </li> */}
           </ul>
         </div>
-        <Button onClick={() => { setModelOpen(true) }} text={'Try Your Info'} variant='fill' />
+        <ScrollIntoView selector='#contact' className='cursor-pointer'>
+          <Button text={'Get In Touch'} variant='fill' />
+        </ScrollIntoView>
       </div>
     </nav>
   );

@@ -4,14 +4,14 @@ import { Tilt } from 'react-tilt'
 const templateData = [
     {
         title: '3D Portfolio',
-        link: 'https://munawar-hussain-portfolio.vercel.app/',
+        link: 'https://spotfolio-3d-template.vercel.app/',
         price: '20$',
         image: '3d-portfolio.png'
     }, {
-        title: '3D Portfolio',
+        title: 'Main page Portfolio',
         link: 'https://munawar-hussain-portfolio.vercel.app/',
         price: '20$',
-        image: '3d-portfolio.png'
+        image: 'main-page-portfolio.png'
     }, {
         title: '3D Portfolio',
         link: 'https://munawar-hussain-portfolio.vercel.app/',

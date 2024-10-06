@@ -9,10 +9,6 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log("serce id ", process.env.REACT_APP_SERVICE_ID);
-        console.log("serce tmepla  ", process.env.REACT_APP_TEMPLATE_ID);
-        console.log("publijc id ", process.env.REACT_APP_PUBLIC_KEY);
-        
         emailjs
             .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID,
               form.current, {

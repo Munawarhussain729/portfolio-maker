@@ -6,12 +6,13 @@ import emailjs from '@emailjs/browser';
 
 function Contact() {
     const form = useRef();
+  
 
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs
             .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID,
-              form.current, {
+                form.current, {
                 publicKey: process.env.REACT_APP_PUBLIC_KEY,
             })
             .then(
@@ -45,7 +46,7 @@ function Contact() {
                             />
                         </div>
                         <div className='my-4'>
-                            <h1  className='font-semibold mb-1 text-[20px] text-gray-600'>Subject:</h1>
+                            <h1 className='font-semibold mb-1 text-[20px] text-gray-600'>Subject:</h1>
                             <input
                                 type='text'
                                 required={true}

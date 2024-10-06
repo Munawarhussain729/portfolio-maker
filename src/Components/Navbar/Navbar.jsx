@@ -130,9 +130,9 @@ const Navbar = () => {
             </li> */}
           </ul>
         </div>
-        <ScrollIntoView selector='#contact' className='cursor-pointer'>
+        {/* <ScrollIntoView selector='#contact' className='cursor-pointer hidden md:visible'>
           <Button text={'Get In Touch'} variant='fill' />
-        </ScrollIntoView>
+        </ScrollIntoView> */}
       </div>
     </nav>
   );

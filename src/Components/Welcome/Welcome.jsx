@@ -16,11 +16,11 @@ const Welcome = () => {
             and hard work with elegance.
           </p>
           <div className="flex w-full flex-col justify-start md:flex-row items-start ">
-          <ScrollIntoView selector="#templates" className='cursor-pointer w-full md:w-auto'>
+          <ScrollIntoView selector="#templates" className='cursor-pointer w-full mr-2 md:w-auto'>
             <Button
               text='Get Started'
               variant='fill'
-              className='w-full my-1'
+              className='w-full my-1 '
             />
           </ScrollIntoView>
           <ScrollIntoView selector="#templates" className='cursor-pointer w-full md:w-auto'>

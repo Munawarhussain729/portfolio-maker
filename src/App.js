@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './pages/Home';
 import Welcome from './Components/Welcome/Welcome';
@@ -12,7 +12,13 @@ import gsap from "gsap"
 
 const App = () => {
   const comp = useRef(null)
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
+
   useLayoutEffect(() => {
+   
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline()
       t1.from("#intro-slider", {
@@ -50,14 +56,14 @@ const App = () => {
         id="intro-slider"
         className="h-screen p-10 bg-gray-50 absolute top-0 left-0 font-spaceGrotesk z-10 w-full flex flex-col gap-10 tracking-tight"
       >
-        <h1 className="text-8xl mt-5" id="title-1">
-        Looking for Stunning Portfolios?
+        <h1 className="text-xl md:text-8xl mt-5" id="title-1">
+          Looking for Stunning Portfolios?
         </h1>
-        <h1 className="text-8xl" id="title-2">
-        You've Found the Perfect Place
+        <h1 className="text-xl md:text-8xl" id="title-2">
+          You've Found the Perfect Place
         </h1>
-        <h1 className="text-8xl" id="title-3">
-       <span className='text-9xl'>SpotFolio</span> : Where Creativity Meets Excellence
+        <h1 className="text-xl md:text-8xl" id="title-3">
+          <span className='text-2xl md:text-9xl'>SpotFolio</span> : Where Creativity Meets Excellence
         </h1>
       </div>
 

@@ -15,7 +15,7 @@ const Welcome = () => {
             Transform your ideas and projects into a stunning portfolio that showcases your creativity
             and hard work with elegance.
           </p>
-          <div className="flex w-full flex-col justify-center md:flex-row items-center md:space-x-4">
+          <div className="flex w-full flex-col justify-start md:flex-row items-start ">
           <ScrollIntoView selector="#templates" className='cursor-pointer w-full md:w-auto'>
             <Button
               text='Get Started'

@@ -1,13 +1,15 @@
 import React from 'react'
 import SectionWrapper from '../../elements/SectionWrapper'
 import Button from '../../elements/Button'
+import Scene from '../../elements/Scene'
 
 function Contact() {
     return (
         <SectionWrapper id={'contact'} title={'Contact Us'}>
             <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
                 <div className='flex justify-center items-center w-full'>
-                    <img src='/contact-us.png' alt='contact' width={300} height={500} />
+                    <Scene />
+                    {/* <img src='/contact-us.png' alt='contact' width={300} height={500} /> */}
                 </div>
                 <div className='bg-gray-100 p-5 rounded-lg'>
                     <div className='my-3'>
